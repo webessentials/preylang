@@ -1,0 +1,19 @@
+.breadcrumb {
+    background-color: transparent;
+    padding: 15px 0 0;
+    font-size: 14px;
+
+    li a{
+        color: $color-primary;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: '>';
+    }
+
+}
+
+.total-record {
+    margin-bottom: 50px;
+}

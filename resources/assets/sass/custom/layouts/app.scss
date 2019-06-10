@@ -1,0 +1,31 @@
+body {
+    font-size: 0.95rem;
+}
+
+.app {
+    .content {
+        @include _transition(margin $sidebar-transition-delay);
+
+        $padding-x: $content-padding-x-md;
+        padding: $header-height $padding-x $footer-height $padding-x;
+    }
+    @include media-up(xl) {
+        &.menu-min .content {
+            margin-left: $sidebar-width-menu-min - $sidebar-width;
+        }
+    }
+    @include media-up(lg) {
+        &.menu-min .content {
+            margin-left: $sidebar-width-menu-min - $sidebar-width;
+        }
+    }
+    @include media-up(md) {
+        &.menu-min .content {
+            margin-left: $sidebar-width-menu-min - $sidebar-width;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

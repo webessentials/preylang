@@ -1,0 +1,126 @@
+.form-control{
+    padding: 0.1rem 0.75rem;
+}
+
+input[type=text].read-only,
+input[type=password].read-only {
+    border: none;
+    background: none !important;
+}
+
+.align-checkbox {
+    padding-top: 0.5rem;
+}
+
+.prompt-message {
+    display: block;
+    padding: 0.5rem;
+}
+
+.alert-danger {
+    ul {
+        margin-bottom: 0;
+    }
+}
+
+.form-process {
+    margin-bottom: 20px;
+}
+
+.checkbox-inline {
+    margin-right: 5px;
+}
+
+.checkbox-inline + span {
+    margin-right: 10px !important;
+}
+
+.impact-actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    input {
+        margin: 0 1.7px;
+
+        &[type="email"] {
+            width: 16em;
+            height: 6em;
+        }
+    }
+
+    a.btn {
+        margin-bottom: 0;
+    }
+}
+
+.impact-actions-left{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    float: right;
+
+    input {
+        margin: 0 1.7px;
+
+        &[type="email"] {
+            width: 16em;
+            height: 6em;
+        }
+    }
+
+    a.btn {
+        margin-bottom: 0;
+    }
+}
+
+.global-usergroup-filter {
+    margin-top: 10px;
+    float:right;
+
+    .dropdown {
+        margin-left: 10px;
+
+        .btn {
+            margin-bottom: 0;
+            text-align: left;
+
+            span {
+                display: inline-block;
+                min-width: 100px;
+            }
+        }
+    }
+
+    .dropdown-toggle{
+        background: $color-bg;
+    }
+
+    .dropdown-menu {
+        background: $color-bg;
+
+        a {
+            color: $color-text;
+        }
+
+        .dropdown-item.active, .dropdown-item:active {
+            background: none;
+        }
+    }
+}
+
+.form-control.boxed{
+    border-radius: 0.25rem;
+}
+
+#dropdownMenuButton{
+    box-shadow: none;
+}
+
+.show > .btn.btn-secondary.dropdown-toggle:focus, .selectize-input.focus{
+    box-shadow: none;
+    border-radius: 0.25rem;
+    border-color: $color-primary;
+}
+
+

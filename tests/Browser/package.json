@@ -1,0 +1,19 @@
+{
+  "name": "preylang-uat",
+  "version": "1.0.0",
+  "description": "PreyLang UAT testing (https://docs.cypress.io/guides/getting-started/writing-your-first-test.html)",
+  "main": "index.js",
+  "scripts": {
+    "cypress:headless": "./node_modules/.bin/cypress run",
+    "cypress": "./node_modules/.bin/cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.1.5",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
+    "mochawesome-merge": "^1.0.5",
+    "mochawesome-report-generator": "^3.1.5"
+  }
+}

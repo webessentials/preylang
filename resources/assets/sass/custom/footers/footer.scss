@@ -1,0 +1,17 @@
+@include media-up(xl) {
+    .app.menu-min .footer {
+        left: $sidebar-width-menu-min;
+    }
+}
+
+@include media-up(lg) {
+    .app.menu-min .footer {
+        left: $sidebar-width-menu-min;
+    }
+}
+
+@include media-up(md) {
+    .app.menu-min .footer {
+        left: $sidebar-width-menu-min;
+    }
+}

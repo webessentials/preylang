@@ -1,0 +1,4 @@
+{
+	"testRegex": "\\_spec\\.js$",
+	"testResultsProcessor": "./node_modules/jest-html-reporter"
+}

@@ -1,0 +1,26 @@
+.table thead th {
+  text-align: center;
+  color: $color-text;
+  vertical-align: top;
+
+  a:not(.btn) {
+    display: block;
+    color: $color-text;
+  }
+}
+
+tbody {
+  tr.edited-row {
+    td {
+      background-color: #deeaf5;
+    }
+  }
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.tbl-activity-list th.fixed-col a {
+  width: 110px;
+}

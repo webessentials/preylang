@@ -1,0 +1,37 @@
+### Laravel ###
+/vendor
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+storage/*.key
+storage/**/*.json
+storage/documents
+storage/ansible/
+storage/debugbar/
+.env.*.php
+.env.php
+.env
+.env.testing
+Homestead.yaml
+Homestead.json
+_ide_helper_models.php
+
+# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+.rocketeer/
+/build/
+/bin/
+/laradock/
+/supervisord.d/
+
+public/css/
+public/js/
+public/fonts/
+public/mix-manifest.json
+
+tests/Browser/console/
+tests/Browser/screenshots/
+tests/API/__tests__/mock.js

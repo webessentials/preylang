@@ -1,0 +1,27 @@
+.list-inline-item {
+    .image-gallery {
+        display: inline-block;
+    }
+}
+.image-gallery {
+    .img-thumbnail {
+        display: inline-block;
+        width: 200px;
+        vertical-align: top;
+        padding: 3px;
+        margin: 0 7px 0 0;
+    }
+    a {
+        cursor: pointer;
+    }
+    .modal-content {
+        text-align: center;
+    }
+    audio {
+        margin-bottom: $form-group-margin-bottom;
+    }
+}
+
+.modal-image img{
+    max-width: 100%;
+}

@@ -1,0 +1,902 @@
+{
+	"categories": {
+		"Activities": {
+			"name": "Activities",
+			"sysValue": "activities",
+			"subCategories": [
+				{
+					"name": "Logging",
+					"sysValue": "logging",
+					"subLevel": 1,
+					"subCategories": [
+						{
+							"name": "Area that's missing",
+							"sysValue": "missingArea",
+							"subLevel": 2,
+							"allowModifySub": {
+								"new": true,
+								"subCategories": [
+									{
+										"name": "ELC",
+										"sysValue": "elc",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									},
+									{
+										"name": "Immigrants",
+										"sysValue": "immigrants",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									},
+									{
+										"name": "Locals",
+										"sysValue": "locals",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									},
+									{
+										"name": "Don't know",
+										"sysValue": "unknown",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"name": "Planks",
+							"sysValue": "planks",
+							"subLevel": 2,
+							"allowModifySub": {
+								"new": true,
+								"subCategories": [
+									{
+										"name": "ELC",
+										"sysValue": "elc",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									},
+									{
+										"name": "Immigrants",
+										"sysValue": "immigrants",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									},
+									{
+										"name": "Locals",
+										"sysValue": "locals",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									},
+									{
+										"name": "Don't know",
+										"sysValue": "unknown",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"name": "Stump",
+							"sysValue": "stump",
+							"subLevel": 2,
+							"allowModifySub": {
+								"new": true,
+								"subCategories": [
+									{
+										"name": "ELC",
+										"sysValue": "elc",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									},
+									{
+										"name": "Immigrants",
+										"sysValue": "immigrants",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									},
+									{
+										"name": "Locals",
+										"sysValue": "locals",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									},
+									{
+										"name": "Don't know",
+										"sysValue": "unknown",
+										"subLevel": 4,
+										"subCategories": [
+											{
+												"name": "Interaction yes",
+												"sysValue": "interactionYes",
+												"subLevel": 5
+											},
+											{
+												"name": "Interaction no",
+												"sysValue": "interactionNo",
+												"subLevel": 5
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"name": "Transport",
+							"sysValue": "transport",
+							"subLevel": 2,
+							"subCategories": [
+								{
+									"name": "Big truck",
+									"sysValue": "bigTruck",
+									"subLevel": 3,
+									"subCategories": [
+										{
+											"name": "ELC",
+											"sysValue": "elc",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "Immigrants",
+											"sysValue": "immigrants",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "locals",
+											"sysValue": "locals",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "Don't know",
+											"sysValue": "unknown",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "Small truck",
+									"sysValue": "smallTruck",
+									"subLevel": 3,
+									"subCategories": [
+										{
+											"name": "ELC",
+											"sysValue": "elc",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "Immigrants",
+											"sysValue": "immigrants",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "locals",
+											"sysValue": "locals",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "Don't know",
+											"sysValue": "unknown",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "Ox cart",
+									"sysValue": "oxCart",
+									"subLevel": 3,
+									"subCategories": [
+										{
+											"name": "ELC",
+											"sysValue": "elc",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "Immigrants",
+											"sysValue": "immigrants",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "locals",
+											"sysValue": "locals",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "Don't know",
+											"sysValue": "unknown",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "Machine cow",
+									"sysValue": "elc",
+									"subLevel": 3,
+									"subCategories": [
+										{
+											"name": "ELC",
+											"sysValue": "elc",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "Immigrants",
+											"sysValue": "immigrants",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "locals",
+											"sysValue": "locals",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "Don't know",
+											"sysValue": "unknown",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "Boat",
+									"sysValue": "boat",
+									"subLevel": 3,
+									"subCategories": [
+										{
+											"name": "ELC",
+											"sysValue": "elc",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "Immigrants",
+											"sysValue": "immigrants",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "locals",
+											"sysValue": "locals",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										},
+										{
+											"name": "Don't know",
+											"sysValue": "unknown",
+											"subLevel": 4,
+											"subCategories": [
+												{
+													"name": "Interaction yes",
+													"sysValue": "interactionYes",
+													"subLevel": 5
+												},
+												{
+													"name": "Interaction no",
+													"sysValue": "interactionNo",
+													"subLevel": 5
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "ELC plantation",
+					"sysValue": "elcPlantation",
+					"subLevel": 1
+				},
+				{
+					"name": "ELC mining",
+					"sysValue": "elcMining",
+					"subLevel": 1
+				},
+				{
+					"name": "Illegal hunting",
+					"sysValue": "illegalHunting",
+					"subLevel": 1,
+					"subCategories": [
+						{
+							"name": "Immigrants",
+							"sysValue": "immigrants",
+							"subLevel": 2
+						},
+						{
+							"name": "locals",
+							"sysValue": "locals",
+							"subLevel": 2
+						},
+						{
+							"name": "Don't know",
+							"sysValue": "unknown",
+							"subLevel": 2
+						}
+					]
+				},
+				{
+					"name": "Illegal fishing",
+					"sysValue": "illegalFishing",
+					"subLevel": 1,
+					"subCategories": [
+						{
+							"name": "Immigrants",
+							"sysValue": "immigrants",
+							"subLevel": 2
+						},
+						{
+							"name": "locals",
+							"sysValue": "locals",
+							"subLevel": 2
+						},
+						{
+							"name": "Don't know",
+							"sysValue": "logging",
+							"subLevel": 2
+						}
+					]
+				}
+			]
+		},
+		"Resources": {
+			"name": "Resources",
+			"sysValue": "resources",
+			"subCategories": [
+				{
+					"name": "Trees",
+					"sysValue": "trees",
+					"subLevel": 1,
+					"subCategories": [
+						{
+							"name": "Resin",
+							"sysValue": "resin",
+							"subLevel": 2,
+							"subCategories": [
+								{
+									"name": "Current",
+									"sysValue": "current",
+									"subLevel": 3,
+									"allowModifySub": {
+										"new": true
+									}
+								},
+								{
+									"name": "Future",
+									"sysValue": "future",
+									"subLevel": 3,
+									"allowModifySub": {
+										"new": true
+									}
+								}
+							]
+						},
+						{
+							"name": "Other luxury trees",
+							"sysValue": "otherLuxuryTrees",
+							"subLevel": 2,
+							"allowModifySub": {
+								"new": true
+							}
+						}
+					]
+				},
+				{
+					"name": "Animals",
+					"sysValue": "animals",
+					"subLevel": 1,
+					"allowModifySub": {
+						"new": true
+					}
+				},
+				{
+					"name": "NTFP",
+					"sysValue": "ntfp",
+					"subLevel": 1,
+					"subCategories": [
+						{
+							"name": "Edible",
+							"sysValue": "edible",
+							"subLevel": 2,
+							"allowModifySub": {
+								"new": true
+							}
+						},
+						{
+							"name": "Medicinal",
+							"sysValue": "medicinal",
+							"subLevel": 2,
+							"allowModifySub": {
+								"new": true
+							}
+						},
+						{
+							"name": "Crafts",
+							"sysValue": "craft",
+							"subLevel": 2,
+							"allowModifySub": {
+								"new": true
+							}
+						}
+					]
+				},
+				{
+					"name": "Sacred",
+					"sysValue": "sacred",
+					"subLevel": 1,
+					"subCategories": [
+						{
+							"name": "Temples",
+							"sysValue": "temples",
+							"subLevel": 2,
+							"allowModifySub": {
+								"new": true
+							}
+						},
+						{
+							"name": "Sacred trees",
+							"sysValue": "sacredTrees",
+							"subLevel": 2,
+							"allowModifySub": {
+								"new": true
+							}
+						},
+						{
+							"name": "Burial sites",
+							"sysValue": "burialSites",
+							"subLevel": 2,
+							"allowModifySub": {
+								"new": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"Reporting": {
+			"name": "Reporting",
+			"sysValue": "reporting",
+			"subCategories": [
+				{
+					"name": "Positive interaction with authorities",
+					"sysValue": "authoritiesPositiveInteraction",
+					"subLevel": 1
+				},
+				{
+					"name": "Negative interaction with authorities",
+					"sysValue": "authoritiesNegativeInteraction",
+					"subLevel": 1
+				},
+				{
+					"name": "Authorities seen in doing illegal activities",
+					"sysValue": "illegalAuthoritiesActivities",
+					"subLevel": 1
+				},
+				{
+					"name": "Submitting official report to authorities",
+					"sysValue": "reportToAuthorities",
+					"subLevel": 1
+				},
+				{
+					"name": "Threat",
+					"sysValue": "threat",
+					"subLevel": 1,
+					"allowModifySub": {
+						"new": true
+					},
+					"subCategories": [
+						{
+							"name": "Disturbance",
+							"sysValue": "disturbance",
+							"subLevel": 2
+						},
+						{
+							"name": "Arrest",
+							"sysValue": "arrest",
+							"subLevel": 2
+						},
+						{
+							"name": "Killing",
+							"sysValue": "killing",
+							"subLevel": 2
+						},
+						{
+							"name": "Other",
+							"sysValue": "otherThreat",
+							"subLevel": 2
+						}
+					]
+				},
+				{
+					"name": "Violence",
+					"sysValue": "violence",
+					"subLevel": 1,
+					"allowModifySub": {
+						"new": true
+					},
+					"subCategories": [
+						{
+							"name": "Wealth, Goods",
+							"sysValue": "wealthGoods",
+							"subLevel": 2
+						},
+						{
+							"name": "Physical",
+							"sysValue": "physical",
+							"subLevel": 2
+						},
+						{
+							"name": "Other",
+							"sysValue": "otherViolence",
+							"subLevel": 2
+						}
+					]
+				}
+			]
+		},
+		"Climate": {
+			"name": "Climate",
+			"sysValue": "climate",
+			"subCategories": [
+				{
+					"name": "Climate change",
+					"sysValue": "climateChange",
+					"subLevel": 1
+				},
+				{
+					"name": "Change adaptation",
+					"sysValue": "changeAdaptation",
+					"subLevel": 1
+				}
+			]
+		},
+		"Other": {
+			"name": "Other",
+			"sysValue": "other"
+		}
+	}
+}

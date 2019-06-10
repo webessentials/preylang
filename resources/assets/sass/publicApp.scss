@@ -1,0 +1,23 @@
+// Variables
+@import 'globals/variables';
+@import 'themes/mixins';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Datepicker bootstrap
+@import 'lib/datepicker/bootstrap-datetimepicker.min.css';
+
+// FontAwesome Icons
+@import '~font-awesome/scss/font-awesome';
+
+// Theme
+@import 'themes/layouts/typography';
+@import 'themes/layouts/layout';
+@import 'themes/common/button/button';
+@import 'themes/common/card/card';
+@import 'themes/common/form/form';
+
+//customize css
+@import 'custom/map/map';
+@import 'custom/common/form/form';

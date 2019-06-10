@@ -1,0 +1,56 @@
+// Variables
+@import 'globals/variables';
+@import 'globals/mixins';
+@import 'themes/mixins';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// datepicker bootstrap
+//@import "~gijgo/css/gijgo.css";
+@import "lib/datepicker/bootstrap-datetimepicker.min.css";
+
+// FontAwesome Icons
+@import "~font-awesome/scss/font-awesome";
+
+@import 'themes/auth/auth';
+@import 'themes/common/card/card';
+@import 'themes/common/form/form';
+@import 'themes/layouts/app';
+@import 'themes/layouts/typography';
+@import 'themes/layouts/layout';
+@import 'themes/footers/footer';
+@import 'themes/headers/header';
+@import 'themes/headers/buttons';
+@import 'themes/headers/collapse';
+@import 'themes/headers/nav';
+@import 'themes/headers/headerTitle';
+@import 'themes/headers/profile';
+@import 'themes/headers/notifications';
+@import 'themes/sidebar/header';
+@import 'themes/sidebar/sidebar';
+@import 'themes/sidebar/logo';
+
+@import "themes/common/card/card";
+@import "themes/common/navigation/navigation";
+@import "themes/common/form/form";
+@import "themes/common/items-list/items-list";
+@import "themes/common/button/button";
+@import "themes/common/pagination/pagination";
+
+//customize css
+@import "custom/common/button/icon-style";
+@import "custom/layouts/app";
+@import "custom/chart/chart";
+@import "custom/map/map";
+@import "custom/sidebar/header";
+@import "custom/sidebar/sidebar";
+@import "custom/sidebar/logo";
+@import "custom/footers/footer";
+@import "custom/breadcrumb/breadcrumb";
+@import "custom/common/form/form";
+@import "custom/common/table/table";
+@import "custom/common/media/media";
+@import "custom/datepicker/datepicker";
+@import "custom/selectize/selectize.css";
+

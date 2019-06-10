@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Laravel Code Standards" default="default" basedir=".">
+	<description>
+		Apache ant build file for PreyLang package
+	</description>
+
+	<!-- Set global properties for this build -->
+	<property name="package.path" location="./" />
+	<property name="package.preylang.path" location="./" />
+	<!--<property name="phpcs.ignore.path" location="${package.path}/Tests" />-->
+	<property name="php.bin" location="/usr/bin/php7.2" />
+
+	<target name="help" description="Displays a help message">
+		<echo>Ant usage:</echo>
+		<echo>====================</echo>
+		<echo>ant build            Build project and run the internal ants below</echo>
+		<echo>ant build-parallel   Build project and run the internal ants below in parallel when possible</echo>
+		<echo>                     Intended for usage on the command line before committing.</echo>
+		<echo>ant phpcs            Find coding standard violations using PHP_CodeSniffer and print human readable output.</echo>
+		<echo>                     Intended for usage on the command line before committing.</echo>
+		<echo>
+		</echo>
+		<echo>Internal Ants:</echo>
+		<echo>====================</echo>
+		<echo>ant prepare          Prepare for build</echo>
+		<echo>ant phpcs-ci         Find coding standard violations using PHP_CodeSniffer creating a log file for the continuous integration server</echo>
+	</target>
+
+	<target name="default" depends="">
+		<antcall target="build" />
+	</target>
+
+	<target name="build" depends="prepare,phpcs-ci" />
+
+	<target name="build-parallel" depends="prepare,tools-parallel" />
+
+	<target name="tools-parallel" description="Run tools in parallel">
+		<parallel threadCount="2">
+			<antcall target="phpcs-ci" />
+		</parallel>
+	</target>
+
+	<target name="clean" description="Cleanup build artifacts">
+		<delete dir="${basedir}/build/logs/checkstyle" />
+	</target>
+
+	<target name="prepare" depends="clean" description="Prepare for build">
+		<mkdir dir="${basedir}/build/logs/checkstyle" />
+		<mkdir dir="${basedir}/build/logs/checkstyle/coverage" />
+	</target>
+
+	<target name="phpcs" description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
+		<exec executable="/usr/local/bin/phpcs">
+			<arg value="--standard=./phpcs.xml" />
+			<arg value="--report-checkstyle=build/logs/checkstyle/checkstyle.xml" />
+			<arg value="--report-full=build/logs/checkstyle/checkstyle.txt" />
+		</exec>
+	</target>
+
+	<target name="phpcs-ci" description="Find coding standard violations using PHP_CodeSniffer creating a log file for the continuous integration server">
+		<exec executable="/usr/local/bin/phpcs" output="/dev/null">
+			<arg value="--standard=./phpcs.xml" />
+			<arg value="--report-checkstyle=build/logs/checkstyle/checkstyle.xml" />
+			<arg value="--report-full=build/logs/checkstyle/checkstyle.txt" />
+		</exec>
+	</target>
+</project>

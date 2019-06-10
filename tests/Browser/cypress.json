@@ -1,0 +1,14 @@
+{
+    "projectId": "preylang_uat",
+    "baseUrl": "http://local-preylang-laravel.wehost.asia",
+    "defaultCommandTimeout": 4000,
+    "pageLoadTimeout": 30000,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "./../../build/logs/uat_report",
+        "reportFilename": "merged_result.json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }
+}

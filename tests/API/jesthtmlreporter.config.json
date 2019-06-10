@@ -1,0 +1,5 @@
+{
+	"pageTitle": "PreyLang API Reporter",
+	"outputPath": "../../build/logs/api_report/index.html",
+	"includeFailureMsg": false
+}

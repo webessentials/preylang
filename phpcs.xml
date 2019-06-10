@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<ruleset name="Laravel Code Standards">
+
+	<file>./app/</file>
+	<file>./database</file>
+	<file>./tests</file>
+
+	<!--<arg name="report" value="summary"/>-->
+	<arg name="colors"/>
+	<arg value="sp"/>
+	<ini name="memory_limit" value="128M"/>
+	<arg name="basepath" value="./" />
+
+	<exclude-pattern>*/resources/*</exclude-pattern>
+	<exclude-pattern>*/routes/*</exclude-pattern>
+	<exclude-pattern>*/config/*</exclude-pattern>
+	<exclude-pattern>*/public/*</exclude-pattern>
+	<exclude-pattern>*/routes/*</exclude-pattern>
+	<exclude-pattern>*/laradock/*</exclude-pattern>
+	<exclude-pattern>*/cache/*</exclude-pattern>
+	<exclude-pattern>*/*.js</exclude-pattern>
+	<exclude-pattern>*/*.css</exclude-pattern>
+	<exclude-pattern>*/*.xml</exclude-pattern>
+	<exclude-pattern>*/*.blade.php</exclude-pattern>
+	<exclude-pattern>*/autoload.php</exclude-pattern>
+	<exclude-pattern>*/storage/*</exclude-pattern>
+	<exclude-pattern>*/docs/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/migrations/*</exclude-pattern>
+	<exclude-pattern>*/database/seeds/DatabaseSeeder.php</exclude-pattern>
+	<exclude-pattern>*/database/factories/*</exclude-pattern>
+	<exclude-pattern>*/config/*</exclude-pattern>
+	<exclude-pattern>*/*.blade.php</exclude-pattern>
+	<exclude-pattern>*/Middleware/*</exclude-pattern>
+	<exclude-pattern>*/Console/Kernel.php</exclude-pattern>
+	<exclude-pattern>*/Exceptions/Handler.php</exclude-pattern>
+	<exclude-pattern>*/Http/Kernel.php</exclude-pattern>
+
+	<rule ref="PSR2">
+		<exclude name="Squiz.Commenting.DocCommentAlignment.SpaceAfterStar"/>
+	</rule>
+
+	<!-- Don't hide tokenizer exceptions -->
+	<rule ref="Internal.Tokenizer.Exception">
+		<type>error</type>
+	</rule>
+
+	<!-- Include the whole PEAR standard -->
+	<rule ref="PEAR">
+		<exclude name="PEAR.Commenting.ClassComment.Missing" />
+		<exclude name="PEAR.Commenting.ClassComment.MissingLicenseTag" />
+		<exclude name="PEAR.Commenting.ClassComment.MissingLinkTag" />
+		<exclude name="PEAR.Commenting.ClassComment.MissingPackageTag" />
+		<exclude name="PEAR.Commenting.ClassComment.MissingAuthorTag" />
+		<exclude name="PEAR.Commenting.ClassComment.MissingCategoryTag" />
+		<exclude name="PEAR.WhiteSpace.ScopeIndent.IncorrectExact" />
+		<exclude name="PEAR.Commenting.ClassComment" />
+		<exclude name="PEAR.Commenting.FileComment.Missing" />
+		<exclude name="PEAR.Commenting.FileComment.MissingAuthorTag" />
+		<exclude name="PEAR.Commenting.FileComment.MissingCategoryTag" />
+		<exclude name="PEAR.Commenting.FileComment.MissingPackageTag" />
+		<exclude name="PEAR.Commenting.FileComment.MissingLicenseTag" />
+		<exclude name="PEAR.Commenting.FileComment.MissingLinkTag" />
+		<exclude name="PEAR.Commenting.FileComment.MissingVersion" />
+		<exclude name="PEAR.Commenting.FunctionComment.MissingParamComment" />
+		<exclude name="PEAR.Commenting.FunctionComment.SpacingAfterParamType" />
+		<exclude name="PEAR.Commenting.InlineComment" />
+		<exclude name="PEAR.Files.IncludingFile.UseInclude" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket" />
+		<exclude name="PEAR.NamingConventions.ValidFunctionName" />
+		<exclude name="PEAR.NamingConventions.ValidVariableName" />
+	</rule>
+
+	<rule ref="Generic.Classes.DuplicateClassName"/>
+	<rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+	<rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
+	<rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
+	<rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
+	<rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+	<rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
+	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+	<rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
+
+	<rule ref="Generic.Commenting.Fixme"/>
+
+	<!-- PEAR uses warnings for inline control structures, so switch back to errors -->
+	<rule ref="Generic.ControlStructures.InlineControlStructure">
+		<properties>
+			<property name="error" value="true"/>
+		</properties>
+	</rule>
+
+	<rule ref="Generic.Files.ByteOrderMark"/>
+	<rule ref="Generic.Files.LineEndings"/>
+	<rule ref="Generic.Files.LineLength">
+		<properties>
+			<property name="lineLimit" value="120"/>
+			<property name="absoluteLineLimit" value="150"/>
+		</properties>
+	</rule>
+
+
+	<!-- Have 12 chars padding maximum and always show as errors -->
+	<rule ref="Generic.Formatting.MultipleStatementAlignment">
+		<properties>
+			<property name="maxPadding" value="12"/>
+			<property name="error" value="true"/>
+		</properties>
+	</rule>
+
+
+	<rule ref="Generic.Functions.CallTimePassByReference"/>
+	<rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
+	<rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
+	<rule ref="Generic.Metrics.CyclomaticComplexity">
+		<properties>
+			<property name="complexity" value="50"/>
+			<property name="absoluteComplexity" value="100"/>
+		</properties>
+	</rule>
+	<rule ref="Generic.Metrics.NestingLevel">
+		<properties>
+			<property name="nestingLevel" value="10"/>
+			<property name="absoluteNestingLevel" value="30"/>
+		</properties>
+	</rule>
+
+	<rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
+	<rule ref="Generic.PHP.LowerCaseConstant"/>
+	<rule ref="Generic.PHP.DisallowShortOpenTag"/>
+
+	<!-- Ban some functions -->
+	<rule ref="Generic.PHP.ForbiddenFunctions">
+		<properties>
+			<property name="forbiddenFunctions" type="array">
+				<element key="sizeof" value="count"/>
+				<element key="delete" value="unset"/>
+				<element key="print" value="echo"/>
+				<element key="is_null" value="null"/>
+				<element key="create_function" value="null"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="Generic.PHP.NoSilencedErrors"/>
+	<rule ref="Generic.Strings.UnnecessaryStringConcat">
+		<exclude-pattern>tests/bootstrap.php</exclude-pattern>
+	</rule>
+
+	<rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+	<rule ref="Generic.WhiteSpace.ScopeIndent"/>
+	<rule ref="MySource.PHP.EvalObjectFactory"/>
+	<rule ref="PSR1.Classes.ClassDeclaration"/>
+	<rule ref="MySource.PHP.GetRequestData"/>
+	<rule ref="PSR1.Files.SideEffects"/>
+	<rule ref="Squiz.ControlStructures.ControlSignature" />
+	<rule ref="Squiz.Commenting.EmptyCatchComment" />
+	<rule ref="Squiz.Commenting.InlineComment" />
+	<rule ref="Squiz.Commenting.PostStatementComment" />
+	<rule ref="Squiz.Commenting.VariableComment" />
+	<rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing" />
+	<rule ref="Squiz.Scope.MethodScope" />
+	<rule ref="Squiz.WhiteSpace.ControlStructureSpacing" />
+	<rule ref="Squiz.WhiteSpace.OperatorSpacing" />
+	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace" />
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+	<rule ref="Generic.Commenting.Todo"/>
+	<rule ref="Generic.ControlStructures.InlineControlStructure"/>
+	<rule ref="Generic.Formatting.DisallowMultipleStatements"/>
+	<rule ref="Generic.Formatting.SpaceAfterCast"/>
+	<rule ref="Generic.NamingConventions.ConstructorName"/>
+	<rule ref="Generic.PHP.DeprecatedFunctions"/>
+	<rule ref="Generic.PHP.LowerCaseKeyword"/>
+	<rule ref="Generic.Strings.UnnecessaryStringConcat"/>
+	<rule ref="PSR2.Classes.PropertyDeclaration"/>
+	<rule ref="PSR2.Methods.MethodDeclaration"/>
+	<rule ref="PSR2.Files.EndFileNewline"/>
+	<rule ref="Zend.Files.ClosingTag"/>
+
+	<rule ref="Generic.Arrays.ArrayIndent"/>
+	<rule ref="Squiz.Arrays.ArrayDeclaration.KeyNotAligned">
+		<severity>0</severity>
+	</rule>
+
+	<rule ref="Squiz.Arrays.ArrayDeclaration.ValueNotAligned">
+		<severity>0</severity>
+	</rule>
+
+	<rule ref="Squiz.Arrays.ArrayDeclaration.CloseBraceNotAligned">
+		<severity>0</severity>
+	</rule>
+
+	<rule ref="Squiz.Arrays.ArrayDeclaration.CloseBraceNewLine">
+		<severity>0</severity>
+	</rule>
+
+	<rule ref="PSR1">
+		<exclude-pattern>*.php</exclude-pattern>
+		<exclude name="PSR1.Methods.CamelCapsMethodName.NotCamelCaps"/>
+	</rule>
+	<rule ref="Generic">
+		<exclude-pattern>*.php</exclude-pattern>
+		<exclude name="Generic.Strings.UnnecessaryStringConcat.Found)"/>
+	</rule>
+
+	<!-- Check var names, but we don't want leading underscores for private vars -->
+	<rule ref="Squiz.NamingConventions.ValidVariableName">
+		<exclude name="Squiz.NamingConventions.ValidVariableName.NotCamelCaps" />
+	</rule>
+	<rule ref="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore">
+		<severity>0</severity>
+	</rule>
+
+	<!-- Private methods MUST not be prefixed with an underscore -->
+	<rule ref="PSR2.Methods.MethodDeclaration.Underscore">
+		<type>error</type>
+	</rule>
+
+	<!-- Private properties MUST not be prefixed with an underscore -->
+	<rule ref="PSR2.Classes.PropertyDeclaration.Underscore">
+		<type>error</type>
+	</rule>
+</ruleset>

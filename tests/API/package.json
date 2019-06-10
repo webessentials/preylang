@@ -1,0 +1,14 @@
+{
+	"name": "preylang-api",
+	"version": "1.0.0",
+	"description": "PreyLang API testing with frisby",
+	"private": true,
+	"scripts": {
+		"test": "node_modules/.bin/jest --config jest.config.json"
+	},
+	"dependencies": {
+		"frisby": "^2.1.0",
+		"jest": "^23.6.0",
+		"jest-html-reporter": "^2.4.0"
+	}
+}

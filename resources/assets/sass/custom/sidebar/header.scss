@@ -1,0 +1,10 @@
+.sidebar-header {
+    position: fixed;
+    width: $sidebar-width;
+    background: $color-divider;
+
+    .brand {
+        color: inherit;
+    }
+}
+

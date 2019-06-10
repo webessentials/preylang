@@ -1,0 +1,25 @@
+.impact-map-card {
+    z-index: 3;
+
+    #impactMap {
+        width: 100%;
+        min-height: 100px;
+        height: calc(100vh - 110px);
+    }
+}
+
+.leaflet-bar {
+    a:not(.leaflet-disabled) {
+        &, &:hover {
+            color: $gray-base;
+        }
+    }
+}
+
+#public-map-filter {
+    font-size: 0.95rem;
+}
+.public-map-action {
+    padding-bottom: 15px;
+}
+

@@ -1,0 +1,7 @@
+/build/
+resources/assets/js/lib/
+public/*
+node_modules/*
+yarn-error.log
+vendor/*
+webpack.mix.js
